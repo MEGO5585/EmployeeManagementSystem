@@ -1,0 +1,11 @@
+E:\EmployeeManagementSystem\ServerLibrary\bin\Debug\net10.0\ServerLibrary.deps.json
+E:\EmployeeManagementSystem\ServerLibrary\bin\Debug\net10.0\ServerLibrary.dll
+E:\EmployeeManagementSystem\ServerLibrary\bin\Debug\net10.0\ServerLibrary.pdb
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.AssemblyInfoInputs.cache
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.AssemblyInfo.cs
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.csproj.CoreCompileInputs.cache
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.dll
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\refint\ServerLibrary.dll
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.pdb
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ref\ServerLibrary.dll
