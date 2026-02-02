@@ -1,18 +1,22 @@
+using Microsoft.EntityFrameworkCore;
+using ServerLibrary.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<AppDbContext>(option =>
+option.UseSqlServer(builder.Configuration.GetConnectionString("constr") ??
+    throw new InvalidOperationException("sorry, your connection is not found")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    // app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI();
-    // app.MapGet("/", () => Results.Redirect("/swagger"));
 }
 
 app.UseHttpsRedirection();

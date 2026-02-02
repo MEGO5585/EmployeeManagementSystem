@@ -9,3 +9,10 @@ E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.dll
 E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\refint\ServerLibrary.dll
 E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.pdb
 E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ref\ServerLibrary.dll
+E:\EmployeeManagementSystem\ServerLibrary\bin\Debug\net10.0\ServerLibrary.runtimeconfig.json
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.csproj.AssemblyReference.cache
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.sourcelink.json
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLibrary.genruntimeconfig.cache
+E:\EmployeeManagementSystem\ServerLibrary\bin\Debug\net10.0\BaseLibrary.dll
+E:\EmployeeManagementSystem\ServerLibrary\bin\Debug\net10.0\BaseLibrary.pdb
+E:\EmployeeManagementSystem\ServerLibrary\obj\Debug\net10.0\ServerLi.AF94C59E.Up2Date
