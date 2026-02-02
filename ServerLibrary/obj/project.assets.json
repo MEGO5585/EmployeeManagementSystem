@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net10.0": {
+      "AutoMapper/1.1.0.118": {
+        "type": "package",
+        "compile": {
+          "lib/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/AutoMapper.dll": {}
+        }
+      },
       "Azure.Core/1.47.1": {
         "type": "package",
         "dependencies": {
@@ -1278,10 +1287,35 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "BaseLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "AutoMapper": "1.1.0.118"
+        },
+        "compile": {
+          "bin/placeholder/BaseLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BaseLibrary.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/1.1.0.118": {
+      "sha512": "Qn0aw2Oi7lmi3cu125XdrgBoGBCJj2YA9nXo50RMcg6UyWRfGV+EIhcfDT0MrVBMYDgWjQv5fWkf9MYwM52U3A==",
+      "type": "package",
+      "path": "automapper/1.1.0.118",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.1.1.0.118.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/AutoMapper.dll"
+      ]
+    },
     "Azure.Core/1.47.1": {
       "sha512": "oPcncSsDHuxB8SC522z47xbp2+ttkcKv2YZ90KXhRKN0YQd2+7l1UURT9EBzUNEXtkLZUOAB5xbByMTrYRh3yA==",
       "type": "package",
@@ -3744,11 +3778,17 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BaseLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BaseLibrary/BaseLibrary.csproj",
+      "msbuildProject": "../BaseLibrary/BaseLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "BCrypt.Net-Next >= 4.0.3",
+      "BaseLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.2",
       "Microsoft.EntityFrameworkCore >= 10.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.2",
@@ -3781,7 +3821,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\EmployeeManagementSystem\\BaseLibrary\\BaseLibrary.csproj": {
+              "projectPath": "E:\\EmployeeManagementSystem\\BaseLibrary\\BaseLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4124,5 +4168,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper 1.1.0.118' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

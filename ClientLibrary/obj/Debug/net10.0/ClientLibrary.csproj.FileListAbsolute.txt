@@ -1,0 +1,12 @@
+E:\EmployeeManagementSystem\ClientLibrary\bin\Debug\net10.0\ClientLibrary.deps.json
+E:\EmployeeManagementSystem\ClientLibrary\bin\Debug\net10.0\ClientLibrary.dll
+E:\EmployeeManagementSystem\ClientLibrary\bin\Debug\net10.0\ClientLibrary.pdb
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\ClientLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\ClientLibrary.AssemblyInfoInputs.cache
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\ClientLibrary.AssemblyInfo.cs
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\ClientLibrary.csproj.CoreCompileInputs.cache
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\ClientLibrary.sourcelink.json
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\ClientLibrary.dll
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\refint\ClientLibrary.dll
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\ClientLibrary.pdb
+E:\EmployeeManagementSystem\ClientLibrary\obj\Debug\net10.0\ref\ClientLibrary.dll

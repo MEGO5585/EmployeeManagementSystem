@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RxYbBPnJjB4=",
+  "dgSpecHash": "qOR21CJ+k0E=",
   "success": true,
   "projectFilePath": "E:\\EmployeeManagementSystem\\ServerLibrary\\ServerLibrary.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mego\\.nuget\\packages\\automapper\\1.1.0.118\\automapper.1.1.0.118.nupkg.sha512",
     "C:\\Users\\Mego\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Mego\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
     "C:\\Users\\Mego\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
@@ -64,5 +65,18 @@
     "C:\\Users\\Mego\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
     "C:\\Users\\Mego\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.4\\system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'AutoMapper 1.1.0.118' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\EmployeeManagementSystem\\ServerLibrary\\ServerLibrary.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\EmployeeManagementSystem\\ServerLibrary\\ServerLibrary.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

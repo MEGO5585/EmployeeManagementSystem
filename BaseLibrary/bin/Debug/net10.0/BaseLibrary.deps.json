@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "BaseLibrary/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "1.1.0.118"
+        },
         "runtime": {
           "BaseLibrary.dll": {}
+        }
+      },
+      "AutoMapper/1.1.0.118": {
+        "runtime": {
+          "lib/AutoMapper.dll": {
+            "assemblyVersion": "1.1.0.188",
+            "fileVersion": "1.1.0.188"
+          }
         }
       }
     }
@@ -18,6 +29,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/1.1.0.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Qn0aw2Oi7lmi3cu125XdrgBoGBCJj2YA9nXo50RMcg6UyWRfGV+EIhcfDT0MrVBMYDgWjQv5fWkf9MYwM52U3A==",
+      "path": "automapper/1.1.0.118",
+      "hashPath": "automapper.1.1.0.118.nupkg.sha512"
     }
   }
 }
