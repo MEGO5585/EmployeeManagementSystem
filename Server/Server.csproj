@@ -26,4 +26,8 @@
     <ProjectReference Include="..\ServerLibrary\ServerLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

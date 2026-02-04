@@ -21,7 +21,7 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Repostories\" />
+    <Folder Include="Repostories\Contracts\" />
   </ItemGroup>
 
   <ItemGroup>
