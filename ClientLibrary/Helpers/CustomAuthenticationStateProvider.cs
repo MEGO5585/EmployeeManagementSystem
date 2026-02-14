@@ -17,14 +17,28 @@ public class CustomAuthenticationStateProvider(LocalStorageServices localStorage
         var deserializeToken = Serializations.DeserializeJsonString<UserSession>(stringToken);
         if (deserializeToken == null) return await Task.FromResult(new AuthenticationState(anonymous));
 
-        var getUSerClaims = DecryptToken(deserializeToken.Token);
-        if (getUSerClaims == null) return await Task.FromResult(new AuthenticationState(anonymous));
+        var getUserClaims = DecryptToken(deserializeToken.Token);
+        if (getUserClaims == null) return await Task.FromResult(new AuthenticationState(anonymous));
 
-        var claimsPrincipal = SetClaimsPrincipal(getUSerClaims);
+        var claimsPrincipal = SetClaimsPrincipal(getUserClaims);
         return await Task.FromResult(new AuthenticationState(claimsPrincipal));
 
     }
 
+    public async Task UpdateAuthenticationState(UserSession userSession)
+    {
+        var claimsPrincipal = new ClaimsPrincipal();
+        if(userSession.Token != null || userSession.RefreshToken != null)
+        {
+            var SerializeSession = Serializations.Serializeobj(userSession);
+            await localStorageServices.SetToken(SerializeSession);
+            var getUserClaims = DecryptToken(userSession.Token);
+            claimsPrincipal = SetClaimsPrincipal(getUserClaims);
+        }
+
+
+    }
+    
     private static CustomUserClaims DecryptToken(string? jwtToken)
     {
         if (string.IsNullOrEmpty(jwtToken)) return new CustomUserClaims();
@@ -53,4 +67,5 @@ public class CustomAuthenticationStateProvider(LocalStorageServices localStorage
             "JwtAuth"
         ));
     }
+
 }
