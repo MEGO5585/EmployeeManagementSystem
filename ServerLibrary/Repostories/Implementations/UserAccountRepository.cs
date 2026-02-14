@@ -106,9 +106,9 @@ public class UserAccountRepository(IOptions<JwtSection> config, AppDbContext app
         );
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
-    private async Task<UserRole> FindUserRole(int userId) => await appDbContext.UserRoles.FirstOrDefaultAsync(x => x.UserId == userId);
+    private async Task<UserRole?> FindUserRole(int userId) => await appDbContext.UserRoles.FirstOrDefaultAsync(x => x.UserId == userId);
 
-    private async Task<SystemRole> FindRoleName(int roleId) => await appDbContext.SystemRoles.FirstOrDefaultAsync(x => x.Id == roleId);
+    private async Task<SystemRole?> FindRoleName(int roleId) => await appDbContext.SystemRoles.FirstOrDefaultAsync(x => x.Id == roleId);
     private async Task<ApplicationUser?> FindUserByEmail(string email) =>
         await appDbContext.ApplicationUsers.FirstOrDefaultAsync(x =>x.Email == email);
 
@@ -130,8 +130,8 @@ public class UserAccountRepository(IOptions<JwtSection> config, AppDbContext app
         var user = await appDbContext.ApplicationUsers.FirstOrDefaultAsync(x => x.Id == findToken.UserId);
         if (user is null) return new LoginResponse(false, "Refresh token couldn't be found because user not found");
         var userRole = await FindUserRole(user.Id);
-        var roleName = await FindRoleName(userRole.RoleId);
-        string jwtToken = GenerateToken(user, roleName.Name!);
+        var roleName = await FindRoleName(userRole!.RoleId);
+        string jwtToken = GenerateToken(user, roleName!.Name!);
         string refreshToken = GenerateRefrashToken();
 
         var updateRefreshToken = await appDbContext.RefreshTokenInfos.
